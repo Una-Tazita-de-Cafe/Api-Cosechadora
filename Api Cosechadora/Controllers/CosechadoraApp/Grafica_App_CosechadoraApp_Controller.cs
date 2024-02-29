@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api_Cosechadora.Controllers.CosechadoraApp
 {
         [ApiController]
-        [Route("api/P")]
+        [Route("api/AplicasionMovil")]
     public class Grafica_App_CosechadoraApp_Controller
     {
         [HttpGet("{id}")]

@@ -23,7 +23,7 @@ namespace Api_Cosechadora.Datos.Papainador
                         {
                             var mdatos = new MDatos();
                             mdatos.IdObservacion = (int)item["idPruebaPapas"];
-                            mdatos.Fecha = ((DateTime)item["InicioCosecha"]).Date;
+                            mdatos.Fecha = ((DateTime)item["InicioCosecha"]).ToString("d");
                             mdatos.Rancho = (string)item["NombreRancho"];
                             mdatos.Parcela = (string)item["nombreParcela"];
                             lista.Add(mdatos);

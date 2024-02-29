@@ -25,7 +25,7 @@ namespace Api_Cosechadora.Datos
                         await item.ReadAsync();
                         string[] num;
                         var datos = new MGrafica();
-                        datos.Fecha = (DateTime)item["FechaCorte"];
+                        datos.Fecha = ((DateTime)item["FechaCorte"]).ToString("d");
                         num = ((string)item["ListaTamano"]).Trim('[', ']').Split(",");
                         datos.numeros = num.Select(e => int.Parse(e)).ToList();
                         datos.Rancho = (string)item["NombreRancho"];

@@ -6,7 +6,7 @@
         //Datos de entra de la base de datos
         public string? Rancho { get; set; }
         public string? Parcela { get; set; }
-        public DateTime Fecha { get; set; }
+        public string? Fecha { get; set; }
 
         //Datos que se otendran de la variable de Lista
         public List<int>? numeros { get; set;}

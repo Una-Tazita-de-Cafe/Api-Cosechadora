@@ -23,7 +23,7 @@ namespace Api_Cosechadora.Datos
                     {
                         await item.ReadAsync();
                         var datos = new MGrafica();
-                        datos.Fecha = (DateTime)item["FechaCorte"];
+                        datos.Fecha = ((DateTime)item["FechaCorte"]).ToString("d");
                         int[] value = {
                             (int)item["Menor14"],
                             (int)item["Cant_14"],

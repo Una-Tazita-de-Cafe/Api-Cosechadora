@@ -22,7 +22,7 @@ namespace Api_Cosechadora.Datos
                         {
                             var mdatos= new MDatos();
                             mdatos.IdObservacion = (int)item["idObservacion"];
-                            mdatos.Fecha = ((DateTime)item["FechaCorte"]).Date;
+                            mdatos.Fecha = ((DateTime)item["FechaCorte"]).ToString("d");
                             mdatos.Rancho = (string)item["NombreRancho"];
                             mdatos.Parcela = (string)item["nombreParcela"];
                             lista.Add(mdatos);
